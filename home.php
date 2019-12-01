@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p>sucess</p>
+    <form action="home.php">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Tweet</button>
+    </form>
 </body>
 </html>
+

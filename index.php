@@ -7,10 +7,10 @@
 <title>Document</title>
 </head>
 <body>
-    <form action="login.php" method="post">
-        <input type="text" name="username" id="username" required>
-        <input type="password" name="password" id="password" required>
-        <button type="submit">Log in</button>
-    </form>   
+<form action="login.php" method="post">
+    <input type="text" name="username" id="username" required>
+    <input type="password" name="password" id="password" required>
+    <button type="submit">Log in</button>
+</form>   
 </body>
 </html>

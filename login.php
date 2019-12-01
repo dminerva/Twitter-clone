@@ -10,12 +10,13 @@ $sql = "select * from users where username = '$username' and password = '$passwo
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-	while ($row = $result->fetch_assoc()) {
-        $_SESSION["username"] = $username;
+        while ($row = $result->fetch_assoc()) {
+                //create user id session variable from db
+                $_SESSION["userID"] = $row["user_id"];     
+                $_SESSION["username"] = $username;
 
-        header("Location: home.php");
-	}
-	
+                header("Location: home.php");
+        }	
 }
 
 echo "ERROR: No account found."; 
