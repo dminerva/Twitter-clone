@@ -1,7 +1,6 @@
 <?php
-ob_start();
 session_start();
-include 'db_connector.php';
+include 'db_handler.php';
 
 $username = filter_var($_POST["username"], FILTER_SANITIZE_STRING);
 $password = filter_var($_POST["password"], FILTER_SANITIZE_STRING);
@@ -15,7 +14,7 @@ if ($result->num_rows > 0) {
                 $_SESSION["userID"] = $row["user_id"];     
                 $_SESSION["username"] = $username;
 
-                header("Location: home.php");
+                header("Location: profile_page.php");
         }	
 }
 
