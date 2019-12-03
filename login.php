@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
                 $_SESSION["userID"] = $row["user_id"];     
                 $_SESSION["username"] = $username;
 
-                header("Location: profile_page.php");
+                header("Location: feed.php");
         }	
 }
 
